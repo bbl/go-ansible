@@ -37,7 +37,7 @@ func main() {
     }
 	pb := ansible.Playbook().
     		Inventory("/path/to/inventory.ini").
-    		Path("/path/to/inventory.yaml").
+    		Path("/path/to/playbook.yaml").
     		ExtraVars(vars).
     		ExtraVars(map[string]string{"key": "value"})
     err := pb.Run()
