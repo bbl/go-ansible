@@ -24,9 +24,9 @@ func main() {
     // Download dependencies from requirements 
     
     err := ansible.Galaxy().
-    		Requirements("/path/to/requirements.yaml").
-    		RolesPath("/path/to/roles_dir").
-            Install()
+             Requirements("/path/to/requirements.yaml").
+    	     RolesPath("/path/to/roles_dir").
+             Install()
     if err != nil {
         panic(err)
     }   
